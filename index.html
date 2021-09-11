@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile View OE studio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body>
+<body id="drkmode">
     <div class="wrapper">
+        <div class="darkmode">
         <nav>
         <div class="nav">
             <img src="/Asset/oe.svg" alt="" style="width: 50px;">
-            <img src="/Asset/Vector.svg" alt="" style="width: 35px;">
+            <i class="ri-moon-clear-line moon"  id="togger"></i>
         </div>
         </nav>
         <section>
@@ -44,13 +45,13 @@
                 </div>
             
             </div>
-            <div class="button">
+            <!-- <div class="button">
                 <div class="btn">
                     <a href="#">Click in section to expand
                         <img src="/Asset/Emojixtar.svg" alt="" width="15px">
                     </a>
                 </div>
-            </div>
+            </div> -->
         </article>
         <main>
             <div class="box_wrapper">
@@ -59,25 +60,30 @@
             <div class="box1">
                 <div class="boxFlex">
                     <img src="/Asset/Design.svg" alt="">
-                    <a href=""><img src="/Asset/Frame.svg" alt=""></a>
+                    <a href="#" class=""></a><i class="ri-add-line btn1"></i></a>
                 </div>
                         <h4>Design</h4>
+                        <p id="p1" class="remove">From product design to logo, Illustrations, icons, brand <br> devlopment and everything visual Design.</p>
              </div>
                     <div class="box2">
                         <div class="boxFlex">
                         <img src="/Asset/Documentation.svg" alt="">
-                        <a href=""><img src="/Asset/Frame.svg" alt=""></a>
+                        <a href="#">
+                            <i class="ri-add-line btn2"></i>
+                        </a>
                         </div>
                         <h4>Documentation</h4>
+                        <p class="print remove" id="p2">Print and magazine design, technical/ <br> annual report design and analysis.</p>
                     </div>
                     
                     <div class="box3">
-                        <p class="print">Print and magazine design, technical/ <br> annual report design and analysis.</p>
                         <div class="boxFlex">
                         <img src="/Asset/Development.svg" alt="">
-                        <a href=""><img src="/Asset/Frame.svg" alt=""></a>
+                        <a href=""><i class="ri-add-line btn3"></i></a>
                         </div>
                         <h4>Development</h4>
+                        <p id="p3">Web development, software development, <br>
+                            and mobile app development</p>
                     </div>
                 </div>
                 
@@ -94,5 +100,7 @@
             </div>
         </footer>
     </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>

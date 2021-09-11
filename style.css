@@ -2,6 +2,18 @@
    --background-color: #fff;
    --text-color: #000;
 }
+.darkmode{
+    --dark-background-color: #000;
+    --text-color: #FFFFFF;
+    --sub-text: #EBEBEB;
+    --first-box: #686868;
+    --second-box: #8E8E8E;
+    --third-box: #5B5B5B;
+    --footer-box: #FF0000;
+}
+#drkmode{
+    /* background-color: #000; */
+}
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +34,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.moon{
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
 }
 .textwrapper{
     /* width: 100%; */
@@ -51,9 +68,9 @@ body{
 .img{
     position:absolute;
     margin:auto 0;
-    width:30%;
-    right:8%;
-    bottom: 45%;
+    width:33%;
+    right:5%;
+    bottom: 50%;
 }
 .lot {
     width:100%;
@@ -69,8 +86,9 @@ body{
 h1 {
     text-transform: uppercase;
     font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 1;
+    font-weight: 800;
+    line-height: 1.2;
+    word-spacing: 1.3px;
     margin: 0;
 }
 .text2{
@@ -115,7 +133,6 @@ h1 {
     width: 100%;
     height: 3px;
     background-color: #77B255;
-
 }
 .text2 .deco3{
     position: relative;
@@ -139,6 +156,12 @@ h1 {
 .gal1{
     width: 100%;
 }
+i{
+    font-size: 1.3rem;
+}
+#togger{
+    text-decoration: none;
+}
 .btn{
     margin-left: 30px;
 }
@@ -154,9 +177,18 @@ h1 {
 .box{
     width: 100%;
     margin-top: 30px;
+    padding-bottom: 100px;
+
 }
 .doublebox{
     width: 100%;
+}
+.doublebox p{
+    padding: 0px 30px;
+    font-size: 0.73rem; 
+    color: #5C5C5C;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
 }
 .box1{
     margin: 0;
@@ -165,13 +197,17 @@ h1 {
     background-color: #F9F9F9;
 }
 .box1 img{
-    margin-top: 45px;
+    margin-top: 20px;
 }
 .box1 h4{
-    padding: 15px 30px;
+    padding: 5px 30px;
     font-size: 1.3rem;
     font-weight: 500;
 }
+.remove{
+    display: none;
+}
+
 .boxFlex{
     display: flex;
     justify-content: space-between;
@@ -188,10 +224,10 @@ h1 {
     height: 150px;
 }
 .box2 img{
-    margin-top: 45px;
+    margin-top: 20px;
 }
 .box2 h4{
-    padding: 15px 30px;
+    padding: 5px 30px;
     font-size: 1.3rem;
     font-weight: 500;
 }
@@ -207,10 +243,10 @@ h1 {
     padding: 15px 30px;
 } */
 .box3 img{
-    margin-top: 0px; 
+    margin-top: 20px; 
 }
 .box3 h4{
-    padding: 20px 30px;
+    padding: 5px 30px;
     font-size: 1.3rem;
     font-weight: 500;
 }
@@ -222,6 +258,9 @@ h1 {
 
 .footerwrapper{
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 .footer{
     display: flex;
